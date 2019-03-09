@@ -11,6 +11,6 @@ for i in range(10):
         print('〇')
         point += 1
     else:
-        print('×　正解は:', question, x*y)
+        print(('x　正解は:{}×{}={}').format(x,y,x*y))
 
 print(('正解率は{}％です。').format(point/10 *100))
