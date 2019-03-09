@@ -1,5 +1,6 @@
 import random
 
+point = 0
 print ('かけ算ドリルを開始します。（全10問）')
 for i in range(10):
     x = random.randint(1,9)
@@ -8,5 +9,8 @@ for i in range(10):
     ans = input(question)
     if int(ans) == x*y:
         print('〇')
+        point += 1
     else:
         print('×　正解は:', question, x*y)
+
+print(('正解率は{}％です。').format(point/10 *100))
